@@ -19,7 +19,6 @@ public class AppTest {
     @Test public void testProduct() {
         int result = calculator.product(a, b);
         assertTrue(result == 140);
-        a=25;
     }
 
     @Test public void testSum() {
@@ -27,13 +26,13 @@ public class AppTest {
         assertTrue(result == 24);
     }
 
-    @Test public void testSquare() {
+    @Test public void testSquareA() {
         int result = calculator.square(a);
         assertTrue(result == 100);
     }
 	
-    @Test public void testSquareWrong() {
+    @Test public void testSquareB() {
         int result = calculator.square(b);
-        assertTrue(result == 100);
+        assertTrue(result == 196);
     }
 }
